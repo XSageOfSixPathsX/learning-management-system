@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,9 +10,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class QueryDto {
+
+public class QueryUpdateDto {
     private Long menteeId;
     private Long mentorId;
-    private String question;
     private String answer;
 }

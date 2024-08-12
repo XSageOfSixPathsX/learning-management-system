@@ -7,15 +7,15 @@ import com.example.demo.entity.Query;
 public class QueryMapper {
 
     public static Query mapToQuery(QueryDto queryDto, Query query){
-        query.setMentee_id(queryDto.getMentee_id());
-        query.setMentor_id(queryDto.getMentor_id());
+        query.setMenteeId(queryDto.getMenteeId());
+        query.setMentorId(queryDto.getMentorId());
         query.setQuestion(queryDto.getQuestion());
         return query;
     }
 
     public static QueryDto mapToQueryDto(Query query, QueryDto queryDto){
-        queryDto.setMentee_id(query.getMentee_id());
-        queryDto.setMentor_id(query.getMentor_id());
+        queryDto.setMenteeId(query.getMenteeId());
+        queryDto.setMentorId(query.getMentorId());
         queryDto.setQuestion(query.getQuestion());
         queryDto.setAnswer(query.getAnswer());
         return queryDto;

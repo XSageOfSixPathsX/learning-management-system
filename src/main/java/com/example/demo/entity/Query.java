@@ -17,13 +17,13 @@ public class Query {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "query_id")
-    private Long query_id;
+    private Long queryId;
 
-    @Column(name = "mentee_id")
-    private Long mentee_id;
+    @Column(name = "mentee_id", nullable = false)
+    private Long menteeId;
 
-    @Column(name = "mentor_id")
-    private Long mentor_id;
+    @Column(name = "mentor_id", nullable = false)
+    private Long mentorId;
 
     @Column(name = "question")
     private String question;
